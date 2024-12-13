@@ -6,11 +6,10 @@ const app = express();
 
 app.use(cors());
 const port = 3000;
-username = 'root'
-password = 'Shahid@2410'
+
 // Correct connection string with no port number
 mongoose.connect(
-  `mongodb+srv://anishaf92:shahid2410@cluster0.togbb5m.mongodb.net/?retryWrites=true&w=majority`)
+  `mongodb://localhost:27017/userDetails`)
   
 .then(() => console.log('Connected to DB'))
 .catch((err) => console.log('Error connecting to DB:', err));
